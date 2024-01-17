@@ -1,0 +1,5 @@
+@use "./partial" as tt;
+
+div {
+  color: tt.$colors-gray100;
+}
