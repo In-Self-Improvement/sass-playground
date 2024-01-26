@@ -1,0 +1,21 @@
+$font-styles: (
+  title-lg: (
+    size: 26px,
+    weight: bold,
+  ),
+  title-md: (
+    size: 10px,
+    weight: bold,
+  ),
+  title-sm: (
+    size: 14px,
+    weight: 600,
+  ),
+);
+
+// Mixin to apply font styles
+@mixin apply-font-style($style-name) {
+  $style: map-get($font-styles, $style-name);
+  font-size: map-get($style, size);
+  font-weight: map-get($style, weight);
+}
